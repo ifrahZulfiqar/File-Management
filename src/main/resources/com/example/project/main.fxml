@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="1278.0" style="-fx-background-color: rgb(233, 235, 237);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.HelloController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="1278.0" style="-fx-background-color: rgb(233, 235, 237);">
+         <center>
+            <VBox fx:id="currentFlights" prefHeight="520.0" prefWidth="1278.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox fillHeight="false" prefHeight="25.0" prefWidth="887.0">
+                     <children>
+                        <Button id="passenger" fx:id="passengerManagementSystem" mnemonicParsing="false" onMouseClicked="#selectionClicked" onMouseEntered="#selectionHovered" onMouseExited="#selectionExited" text="Passenger Management System" />
+                        <Button id="plane" fx:id="planeManagementSystem" mnemonicParsing="false" onMouseClicked="#selectionClicked" onMouseEntered="#selectionHovered" onMouseExited="#selectionExited" text="Plane Management System" />
+                        <Button id="flight" fx:id="flightManagementSystem" mnemonicParsing="false" onMouseClicked="#selectionClicked" onMouseEntered="#selectionHovered" onMouseExited="#selectionExited" text="Flight Management System" />
+                     </children>
+                  </HBox>
+                  <VBox fx:id="mainContainer" prefHeight="577.0" prefWidth="1278.0" />
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>

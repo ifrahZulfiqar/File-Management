@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="1067.0" style="-fx-background-color: rgb(233, 235, 237);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.passengerController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="219.0" prefWidth="1067.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="1071.0" text="Passenger Manager" />
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="39.0" prefWidth="106.0" text="All Pasangers" />
+                        <VBox fx:id="allPasangers" prefHeight="155.0" prefWidth="655.0" style="-fx-background-color: #feffff;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="1066.205078125" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="179.0" prefWidth="1067.0" spacing="5.0">
+               <children>
+                  <Label text="Create a new Passenger" />
+                  <HBox prefHeight="144.0" prefWidth="1067.0">
+                     <children>
+                        <VBox prefHeight="144.0" prefWidth="213.0">
+                           <children>
+                              <Label text="Name" />
+                              <TextField fx:id="name" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="240.0" prefWidth="213.0">
+                           <children>
+                              <Label text="Surname" />
+                              <TextField fx:id="surname" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="240.0" prefWidth="215.0">
+                           <children>
+                              <Label text="Passenger Type" />
+                              <HBox prefHeight="60.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="passengertype" prefHeight="39.0" prefWidth="262.0" />
+                                    <ComboBox fx:id="passengerTypeComboBox" onAction="#handlePassengerTypeComboBox" prefWidth="150.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="213.0">
+                           <children>
+                              <Label text="Luggage Count" />
+                              <TextField fx:id="luggageCount" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="240.0" prefWidth="213.0">
+                           <children>
+                              <Label text="DateOf Birth" />
+                              <TextField fx:id="dateOfBirth" prefHeight="39.0" prefWidth="264.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="130.0" prefWidth="1067.0" spacing="2.0">
+               <children>
+                  <Button fx:id="addUser" mnemonicParsing="false" onAction="#handleAddUser" prefHeight="54.0" prefWidth="1067.0" style="-fx-background-color: rgb(160, 165, 170);" text="Add User" textFill="#f4f4f4" />
+                  <Button fx:id="removeUser" mnemonicParsing="false" onAction="#handleRemoveUser" prefHeight="54.0" prefWidth="1067.0" style="-fx-background-color: rgb(160, 165, 170);" text="Remove User" textFill="#f4f4f4" />
+                  <Button fx:id="updateUser" mnemonicParsing="false" onAction="#handleUpdateUser" prefHeight="54.0" prefWidth="1067.0" style="-fx-background-color: rgb(160, 165, 170);" text="Update User" textFill="#f4f4f4" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

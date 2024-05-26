@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1295.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.planeController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="planeManagement" prefHeight="200.0" prefWidth="1295.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="1294.205078125" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="824.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="addPlaneText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="89.205078125" />
+                        <Button fx:id="addPlane" mnemonicParsing="false" onAction="#handleAddPlane" prefHeight="39.0" prefWidth="115.0" text="Add Plane" />
+                        <Label prefHeight="27.0" prefWidth="78.0" text="Capacity:" />
+                        <TextField fx:id="capacity" prefHeight="39.0" prefWidth="47.0" />
+                        <Button fx:id="plusSign" mnemonicParsing="false" onAction="#handlePlusSign" prefHeight="39.0" prefWidth="42.0" text="+" />
+                        <Button fx:id="minusSign" mnemonicParsing="false" onAction="#handleMinusSign" prefHeight="39.0" prefWidth="42.0" text="-" />
+                     </children></HBox>
+                  <HBox prefHeight="100.0" prefWidth="1218.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1298.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="338.0">
+                                 <children>
+                                    <ComboBox fx:id="removePlaneComboBox" onAction="#handleRemovePlaneComboBox" prefHeight="39.0" prefWidth="723.0" />
+                                    <Button fx:id="removePlane" mnemonicParsing="false" onAction="#handleRemovePlane" prefHeight="39.0" prefWidth="729.0" style="-fx-background-color: rgb(160, 165, 170);" text="Remove Plane" textFill="#f4f4f4" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="1302.0">
+               <children>
+                  <Label text="Airpot" />
+                  <HBox prefHeight="189.0" prefWidth="1295.0">
+                     <children>
+                        <VBox prefHeight="173.0" prefWidth="431.0" spacing="2.0">
+                           <children>
+                              <TextField fx:id="airportfield1" />
+                              <TextField fx:id="airportfield2" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="173.0" prefWidth="431.0" spacing="2.0">
+                           <children>
+                              <Button fx:id="addHanger" mnemonicParsing="false" onAction="#handleAddHanger" prefHeight="39.0" prefWidth="432.0" style="-fx-background-color: rgb(160, 165, 170);" text="Add Hanger" textFill="#f4f4f4" />
+                              <Button fx:id="addrunway" mnemonicParsing="false" onAction="#handleAddrunway" prefHeight="39.0" prefWidth="432.0" style="-fx-background-color: rgb(160, 165, 170);" text="Add Runway" textFill="#f4f4f4" />
+                              <Button fx:id="reserveHanger" mnemonicParsing="false" onAction="#handleReserveHanger" prefHeight="39.0" prefWidth="432.0" style="-fx-background-color: rgb(160, 165, 170);" text="Reserve Hanger" textFill="#f4f4f4" />
+                              <Button fx:id="reserveRunway" mnemonicParsing="false" onAction="#handleReserveRunway" prefHeight="39.0" prefWidth="432.0" style="-fx-background-color: rgb(160, 165, 170);" text="Reserve Runway" textFill="#f4f4f4" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="431.0" spacing="2.0">
+                           <children>
+                              <Button fx:id="removeHanger" mnemonicParsing="false" onAction="#handleRemoveHanger" prefHeight="39.0" prefWidth="432.0" style="-fx-background-color: rgb(160, 165, 170);" text="Remove Hanger" textFill="#f4f4f4" />
+                              <Button fx:id="removeRunway" mnemonicParsing="false" onAction="#handleRemoveRunway" prefHeight="39.0" prefWidth="432.0" style="-fx-background-color: rgb(160, 165, 170);" text="Remove Runway" textFill="#f4f4f4" />
+                              <Button fx:id="resetHanger" mnemonicParsing="false" onAction="#handleResetHanger" prefHeight="39.0" prefWidth="432.0" style="-fx-background-color: rgb(160, 165, 170);" text="Reset Hanger" textFill="#f4f4f4" />
+                              <Button fx:id="resetRunway" mnemonicParsing="false" onAction="#handleResetRunway" prefHeight="39.0" prefWidth="432.0" style="-fx-background-color: rgb(160, 165, 170);" text="Reset Runway" textFill="#f4f4f4" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
